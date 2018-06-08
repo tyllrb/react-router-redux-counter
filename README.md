@@ -11,5 +11,5 @@ The parent container also contains `<Link>` components via the react-router-dom,
 Finally, there is a single redux middleware function to listen to incoming actions, and if the router update location action is called with either `/add` or `/subtract` in its payload's pathname, then the corresponding `COUNTER_ADD` or `COUNTER_SUBTRACT` actions will be dispatched to update our redux store with the new appropriate counter value. 
 
 ## Improvements
-This application can be improved by incorporating type constrains on our data, either using `propTypes`, or preferably the flow library. Also, source bundling (with webpack ideally), and tests would be nice additions as well. 
+This application can be improved by incorporating type constrains on our data, either using `propTypes`, or preferably the flow library. Also, source bundling (with webpack ideally), and tests would be nice additions as well. If this application were to grow in size in would probably be best to use redux effects over redux middleware to better manage/control the design of any redux actions and their corresponding side effects. 
 
